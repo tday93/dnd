@@ -1,0 +1,44 @@
+{
+  "main":{
+    "pattern":[
+      "honorific",
+      "first_name",
+      "last_name"
+    ]
+  },
+  "first_name":{
+    "bucket":[
+      "#weird",
+      "Dave",
+      "Jim",
+      "Frank",
+      "Amber"
+    ]
+  },
+  "last_name":{
+    "bucket":[
+      "Brown",
+      "Green",
+      "White",
+      "Bobby"
+    ]
+  },
+  "honorific":{
+    "bucket":[
+      "",
+      "Mr.",
+      "Mrs.",
+      "Dr",
+      "Ms."
+    ]
+  },
+  "weird":{
+    "bucket":[
+      "jimbo",
+      "cthulu",
+      "THEHAMMER"
+    ]
+  }
+}
+
+
