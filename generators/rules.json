@@ -6,7 +6,7 @@
       "last_name"
     ]
   },
-  "first_name":{
+  "#first_name":{
     "bucket":[
       "#weird",
       "Dave",
@@ -15,7 +15,7 @@
       "Amber"
     ]
   },
-  "last_name":{
+  "#last_name":{
     "bucket":[
       "Brown",
       "Green",
@@ -23,7 +23,7 @@
       "Bobby"
     ]
   },
-  "honorific":{
+  "#honorific":{
     "bucket":[
       "",
       "Mr.",
@@ -32,7 +32,7 @@
       "Ms."
     ]
   },
-  "weird":{
+  "#weird":{
     "bucket":[
       "jimbo",
       "cthulu",

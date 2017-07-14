@@ -17,7 +17,7 @@
       "#flavour"
     ]
   },
-  "goal":{
+  "#goal":{
     "bucket":[
       "recover an item",
       "escort a vip",
@@ -25,7 +25,7 @@
       "kill something"
     ]
   },
-  "setting":{
+  "#setting":{
     "bucket":[
       "castle",
       "dungeon",
@@ -35,7 +35,7 @@
       "city"
     ]
   },
-  "antagonist":{
+  "#antagonist":{
     "bucket":[
       "wizard",
       "necromancer",
@@ -47,7 +47,7 @@
       "big creature"
     ]
   },
-  "roadblock":{
+  "#roadblock":{
     "bucket":[
       "actual roadblock",
       "extra objective",
@@ -55,7 +55,7 @@
       "harder fight"
     ]
   },
-  "flavour":{
+  "#flavour":{
     "bucket":[
       "comedic",
       "npc from previous adventures",

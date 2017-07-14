@@ -11,18 +11,18 @@
       "#appearance"
     ]
   },
-  "name":{
+  "#name":{
     "bucket":[
       "#human_name"
     ]
   },
-  "human_name":{
+  "#human_name":{
     "pattern":[
       "#h_first",
       "#h_last"
     ]
   },
-  "h_first":{
+  "#h_first":{
     "bucket":[
       "Dave",
       "Amber",
@@ -35,7 +35,7 @@
       "Theresa"
     ]
   },
-  "h_last":{
+  "#h_last":{
     "bucket":[
       "Johnson",
       "Robertson",
@@ -47,7 +47,7 @@
       "Crowley"
     ]
   },
-  "disposition":{
+  "#disposition":{
     "bucket":[
       "friendly",
       "snarky",
@@ -60,7 +60,7 @@
       "anxious"
     ]
   },
-  "appearance":{
+  "#appearance":{
     "pattern":[
       "#descriptor",
       "|",
@@ -69,7 +69,7 @@
       "#descriptor"
     ]
   },
-  "descriptor":{
+  "#descriptor":{
     "bucket":[
       "broken nose",
       "splotchy complexion",
