@@ -3,12 +3,16 @@
     "pattern":[
       "Goal:",
       "#goal",
+      "\n",
       "Setting:",
       "#setting",
+      "\n",
       "Antagonist:",
       "#antagonist",
+      "\n",
       "Roadblock:",
       "#roadblock",
+      "\n",
       "Flavour:",
       "#flavour"
     ]
@@ -17,7 +21,7 @@
     "bucket":[
       "recover an item",
       "escort a vip",
-      "resuce someone",
+      "rescue someone",
       "kill something"
     ]
   },

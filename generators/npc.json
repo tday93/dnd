@@ -1,0 +1,101 @@
+{
+  "main":{
+    "pattern":[
+      "Name:",
+      "#name",
+      "\n",
+      "Disposition:",
+      "#disposition",
+      "\n",
+      "Appearance:",
+      "#appearance"
+    ]
+  },
+  "name":{
+    "bucket":[
+      "#human_name"
+    ]
+  },
+  "human_name":{
+    "pattern":[
+      "#h_first",
+      "#h_last"
+    ]
+  },
+  "h_first":{
+    "bucket":[
+      "Dave",
+      "Amber",
+      "Glenn",
+      "Mark",
+      "John",
+      "Olivia",
+      "Bobcat",
+      "Maria",
+      "Theresa"
+    ]
+  },
+  "h_last":{
+    "bucket":[
+      "Johnson",
+      "Robertson",
+      "Cooper",
+      "Smith",
+      "Fletcher",
+      "Black",
+      "Goldthwait",
+      "Crowley"
+    ]
+  },
+  "disposition":{
+    "bucket":[
+      "friendly",
+      "snarky",
+      "sly",
+      "unamused",
+      "kind",
+      "worried",
+      "quiet",
+      "nervous",
+      "anxious"
+    ]
+  },
+  "appearance":{
+    "pattern":[
+      "#descriptor",
+      "|",
+      "#descriptor",
+      "|",
+      "#descriptor"
+    ]
+  },
+  "descriptor":{
+    "bucket":[
+      "broken nose",
+      "splotchy complexion",
+      "sharp features",
+      "hawkish",
+      "handsome",
+      "ugly",
+      "tall",
+      "short",
+      "broad shouldered",
+      "dark hair",
+      "light hair",
+      "hunchbacked",
+      "slouched",
+      "lithe",
+      "waifish",
+      "jacked",
+      "fat",
+      "chubby",
+      "bowlegged",
+      "grizzled",
+      "scarred"
+    ]
+  }
+}
+
+
+
+

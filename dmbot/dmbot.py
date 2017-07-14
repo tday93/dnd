@@ -1,5 +1,6 @@
 import discord
 import roll
+import madlib
 
 
 class DMBot(discord.Client):
@@ -7,7 +8,8 @@ class DMBot(discord.Client):
     def __init__(self, logger):
         self.logger = logger
         super().__init__()
-        self.commands = {"roll": self.roll}
+        self.commands = {"roll": self.roll,
+                         "gen": self.madlib}
 
     async def on_ready(self):
         self.logger.info("logged in as")
@@ -36,10 +38,18 @@ class DMBot(discord.Client):
             return
         split_msg = msg.content.split()
         cmd = split_msg[0][1:]
-        await self.commands[cmd](msg, split_msg)
+        try:
+            await self.commands[cmd](msg, split_msg)
+        except Exception as e:
+            self.logger.error(e)
 
     async def roll(self, msg, split_msg):
         d_string = split_msg[1]
         r_list = roll.roll_dice(d_string)
         msg_out = "Rolls: {} \n Total: {}".format(r_list, sum(r_list))
+        await self.safe_send_message(msg.channel, msg_out)
+
+    async def madlib(self, msg, split_msg):
+        filename = "../generators/" + split_msg[1] + ".json"
+        msg_out = madlib.main(filename)
         await self.safe_send_message(msg.channel, msg_out)
