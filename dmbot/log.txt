@@ -1,0 +1,63 @@
+[32m[I 170622 12:23:25 main:18][m hello world
+[32m[I 170622 12:23:25 main:19][m Namespace(arg='boop', flag=False, name=None, verbose=1)
+[32m[I 170714 09:41:27 main:20][m hello world
+[32m[I 170714 09:41:27 main:21][m Namespace(verbose=0)
+[32m[I 170714 09:41:30 dmbot:12][m logged in as
+[32m[I 170714 09:41:30 dmbot:13][m dmbot
+[32m[I 170714 09:41:30 dmbot:14][m 335454656144736267
+[32m[I 170714 09:41:30 dmbot:15][m -------
+[32m[I 170714 09:53:02 main:20][m hello world
+[32m[I 170714 09:53:02 main:21][m Namespace(verbose=0)
+[32m[I 170714 09:53:05 dmbot:13][m logged in as
+[32m[I 170714 09:53:05 dmbot:14][m dmbot
+[32m[I 170714 09:53:05 dmbot:15][m 335454656144736267
+[32m[I 170714 09:53:05 dmbot:16][m -------
+[32m[I 170714 09:53:16 dmbot:22][m Received message: '~roll 1d20'
+[32m[I 170714 09:53:24 dmbot:22][m Received message: 'hrm'
+[32m[I 170714 09:53:49 main:20][m hello world
+[32m[I 170714 09:53:49 main:21][m Namespace(verbose=0)
+[32m[I 170714 09:53:51 dmbot:13][m logged in as
+[32m[I 170714 09:53:51 dmbot:14][m dmbot
+[32m[I 170714 09:53:51 dmbot:15][m 335454656144736267
+[32m[I 170714 09:53:51 dmbot:16][m -------
+[32m[I 170714 09:53:58 dmbot:22][m Received message: '~roll 1d20'
+[32m[I 170714 09:54:21 main:20][m hello world
+[32m[I 170714 09:54:21 main:21][m Namespace(verbose=0)
+[32m[I 170714 09:54:24 dmbot:13][m logged in as
+[32m[I 170714 09:54:24 dmbot:14][m dmbot
+[32m[I 170714 09:54:24 dmbot:15][m 335454656144736267
+[32m[I 170714 09:54:24 dmbot:16][m -------
+[32m[I 170714 09:54:28 dmbot:22][m Received message: '~roll 1d20'
+[32m[I 170714 09:55:01 main:20][m hello world
+[32m[I 170714 09:55:01 main:21][m Namespace(verbose=0)
+[32m[I 170714 09:55:03 dmbot:13][m logged in as
+[32m[I 170714 09:55:03 dmbot:14][m dmbot
+[32m[I 170714 09:55:03 dmbot:15][m 335454656144736267
+[32m[I 170714 09:55:03 dmbot:16][m -------
+[32m[I 170714 09:55:11 dmbot:22][m Received message: '~roll 1d20'
+[32m[I 170714 09:56:08 main:20][m hello world
+[32m[I 170714 09:56:08 main:21][m Namespace(verbose=0)
+[32m[I 170714 09:56:11 dmbot:13][m logged in as
+[32m[I 170714 09:56:11 dmbot:14][m dmbot
+[32m[I 170714 09:56:11 dmbot:15][m 335454656144736267
+[32m[I 170714 09:56:11 dmbot:16][m -------
+[32m[I 170714 09:56:15 dmbot:22][m Received message: '~roll 1d20'
+[32m[I 170714 09:56:53 main:20][m hello world
+[32m[I 170714 09:56:53 main:21][m Namespace(verbose=0)
+[32m[I 170714 09:56:55 dmbot:13][m logged in as
+[32m[I 170714 09:56:55 dmbot:14][m dmbot
+[32m[I 170714 09:56:55 dmbot:15][m 335454656144736267
+[32m[I 170714 09:56:55 dmbot:16][m -------
+[32m[I 170714 09:56:58 dmbot:22][m Received message: '~roll 1d20'
+[32m[I 170714 09:57:20 main:20][m hello world
+[32m[I 170714 09:57:20 main:21][m Namespace(verbose=0)
+[32m[I 170714 09:57:22 dmbot:13][m logged in as
+[32m[I 170714 09:57:22 dmbot:14][m dmbot
+[32m[I 170714 09:57:22 dmbot:15][m 335454656144736267
+[32m[I 170714 09:57:22 dmbot:16][m -------
+[32m[I 170714 09:57:32 dmbot:22][m Received message: '~roll 1d20'
+[32m[I 170714 09:57:32 dmbot:28][m Sending 'Rolls: [2] 
+     Total: 2' to dmbot
+[32m[I 170714 09:57:46 dmbot:22][m Received message: '~roll 30d100'
+[32m[I 170714 09:57:46 dmbot:28][m Sending 'Rolls: [75, 94, 31, 58, 94, 78, 88, 43, 16, 78, 59, 32, 86, 16, 7, 57, 4, 28, 34, 2, 43, 83, 10, 98, 28, 47, 89, 60, 52, 28] 
+     Total: 1518' to dmbot
