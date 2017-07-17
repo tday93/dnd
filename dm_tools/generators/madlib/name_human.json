@@ -1,0 +1,35 @@
+{
+  "main":{
+    "pattern":[
+      "first_name",
+      "last_name"
+    ]
+  },
+  "first_name":{
+    "bucket":[
+      "Dave",
+      "Jim",
+      "Frank",
+      "Amber"
+    ]
+  },
+  "last_name":{
+    "bucket":[
+      "Brown",
+      "Green",
+      "White",
+      "Bobby"
+    ]
+  },
+  "honorific":{
+    "bucket":[
+      "",
+      "Mr.",
+      "Mrs.",
+      "Dr",
+      "Ms."
+    ]
+  }
+}
+
+

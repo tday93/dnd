@@ -1,0 +1,35 @@
+{
+  "player_name":"",
+  "character_name":"",
+  "languages":["common"],
+  "a_scores":{
+    "str":10,
+    "dex":10,
+    "con":10,
+    "int":10,
+    "wis":10,
+    "cha":10
+  },
+  "a_mods":{
+    "str":0,
+    "dex":0,
+    "con":0,
+    "int":0,
+    "wis":0,
+    "cha":0
+  },
+  "skill_prof":[],
+  "saving_throws":[],
+  "prof_mod":3,
+  "ac":10,
+  "max_hp":0,
+  "temp_hp":0,
+  "current_hp":0,
+  "feats":[],
+  "spells":[],
+  "attacks":[],
+  "items":[],
+  "equipment":[],
+  "weapons":[]
+}
+  

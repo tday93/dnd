@@ -1,0 +1,68 @@
+{
+  "main":{
+    "pattern":[
+      "Goal:",
+      "#goal",
+      "\n",
+      "Setting:",
+      "#setting",
+      "\n",
+      "Antagonist:",
+      "#antagonist",
+      "\n",
+      "Roadblock:",
+      "#roadblock",
+      "\n",
+      "Flavour:",
+      "#flavour"
+    ]
+  },
+  "#goal":{
+    "bucket":[
+      "recover an item",
+      "escort a vip",
+      "rescue someone",
+      "kill something"
+    ]
+  },
+  "#setting":{
+    "bucket":[
+      "castle",
+      "dungeon",
+      "forest",
+      "mountain",
+      "cave",
+      "city"
+    ]
+  },
+  "#antagonist":{
+    "bucket":[
+      "wizard",
+      "necromancer",
+      "the setting itself",
+      "bandits",
+      "enemy adventurers",
+      "the party themselves",
+      "creatures",
+      "big creature"
+    ]
+  },
+  "#roadblock":{
+    "bucket":[
+      "actual roadblock",
+      "extra objective",
+      "puzzle",
+      "harder fight"
+    ]
+  },
+  "#flavour":{
+    "bucket":[
+      "comedic",
+      "npc from previous adventures",
+      "strangeness is afoot",
+      "part of something larger",
+      "antagonist is actually protagnist"
+    ]
+  }
+}
+
