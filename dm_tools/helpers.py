@@ -3,7 +3,7 @@ import random
 
 class TurnQ(object):
 
-    def __init__(self, start_list):
+    def __init__(self, start_list=[]):
         self.queue = start_list
         self.sort_self()
         self.pos = 0
@@ -13,17 +13,20 @@ class TurnQ(object):
         self.sort_self()
 
     def sort_self(self):
-        self.queue = sorted(self.queue, reversed=True, key=lambda f: f[1])
+        self.queue = sorted(self.queue, reverse=True, key=lambda f: f[1])
 
     def next(self):
-        print(self.queue[self.pos])
+        response = self.queue[self.pos]
         if self.pos == (len(self.queue) - 1):
             self.pos = 0
         else:
             self.pos += 1
+        return response
 
     def remove(self, name):
-        self.queue.remove(name)
+        for item in self.queue:
+            if item[0] == name:
+                self.queue.remove(item)
 
 
 def roll_dice(roll_string):
