@@ -1,4 +1,5 @@
 import random
+import json
 
 
 class TurnQ(object):
@@ -45,3 +46,38 @@ def roll_dice(roll_string):
         rolls.append(d_add)
 
     return rolls
+
+
+class AdvJournal(object):
+
+    def __init__(self, filepath):
+        self.journal = read_json(filepath)
+        self.filepath = filepath
+
+    def save(self):
+        write_json(self.journal, self.filepath)
+
+    def write(self, section_name, text):
+        self.journal[section_name].append(text)
+        self.save()
+
+    def add_section(self, section_name):
+        self.journal[section_name] = []
+        self.save()
+
+    def read(self, section_name, num_lines):
+        return self.journal[section_name][-num_lines:]
+
+    def make_note(self, text):
+        self.journal["notes"].append(text)
+        self.save()
+
+
+def read_json(filepath):
+    with open(filepath) as fn:
+        return json.load(fn)
+
+
+def write_json(obj, filepath):
+    with open(filepath, "w") as fo:
+        json.dump(obj, fo, separators=(", ", ": "), indent=2)

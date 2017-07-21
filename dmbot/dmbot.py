@@ -1,5 +1,5 @@
 import discord
-from helpers import roll_dice, TurnQ
+from helpers import roll_dice, TurnQ, AdvJournal
 import madlib
 
 
@@ -9,9 +9,15 @@ class DMBot(discord.Client):
         self.logger = logger
         super().__init__()
         self.turnq = TurnQ()
+        self.journal = AdvJournal("journal.json")
+        self.history = []
         self.commands = {"roll": self.roll,
                          "gen": self.madlib,
-                         "turnq": self.turn_list}
+                         "turnq": self.turn_list,
+                         "mnote": self.make_note,
+                         "rnote": self.read_notes,
+                         "sgen": self.save_genned,
+                         "dgen": self.dump_genned}
 
     async def on_ready(self):
         self.logger.info("logged in as")
@@ -52,8 +58,9 @@ class DMBot(discord.Client):
         await self.safe_send_message(msg.channel, msg_out)
 
     async def madlib(self, msg, split_msg):
-        filename = "../generators/" + split_msg[1] + ".json"
+        filename = "../dm_tools/generators/madlib/" + split_msg[1] + ".json"
         msg_out = madlib.main(filename)
+        self.history.append(msg_out)
         await self.safe_send_message(msg.channel, msg_out)
 
     async def turn_list(self, msg, split_msg):
@@ -76,3 +83,24 @@ class DMBot(discord.Client):
         if action == "remove":
             c_name = split_msg[2]
             self.turnq.remove(c_name)
+
+    async def make_note(self, msg, split_msg):
+        text = " ".join(split_msg[1:])
+        self.journal.make_note(text)
+        await self.safe_send_message(msg.channel, "Okay, note saved")
+
+    async def read_notes(self, msg, split_msg):
+        num_lines = int(split_msg[1])
+        msg_out = self.journal.read("notes", num_lines)
+        await self.safe_send_message(msg.channel, str(msg_out))
+
+    async def save_genned(self, msg, split_msg):
+        last_genned = self.history[-1:][0]
+        self.journal.write("generated", last_genned)
+        await self.safe_send_message(msg.channel, "Okay, saved that")
+
+    async def dump_genned(self, msg, split_msg):
+        num_lines = int(split_msg[1])
+        genned = self.journal.read("generated", num_lines)
+        for item in genned:
+            await self.safe_send_message(msg.channel, item)
